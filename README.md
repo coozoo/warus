@@ -1,7 +1,7 @@
 # warus
 Response to muskovien invasion in Ukraine
 
-Small set of scripts to response for muskovien attack.
+Small set of simple dumb scripts to response for muskovien attack.
 
 # How to use
 
