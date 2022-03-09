@@ -45,13 +45,18 @@ Create instances as folowing.
  
  ## setting up scripts
  
- Copy IP of your cloud to clipboard and paste as new line into "genips" file, you can paste as many IPs as you want.
+ 1. Copy IP of your cloud to clipboard and paste as new line into "genips" file, you can paste as many IPs as you want.
  
- after that you just need to launch (you can use vpn to hide your traces):
+ 2. update ssh key file name inside `starter.sh` script find line `sshkey=sshkey.key` and update name if you've created key with name `sshkey.key` you should change nothing
+ 
+ 3. after that you just need to launch script (you can use vpn to hide your traces):
  
  ```bash
  $ ./launch.sh
  ```
+ 
+ Docker instance with bombardier inside will be created for each cloud machine. it will restart every 600s with random target from the list.
+ 
  ## modify targets
  
  list of targets it's one line file "targets", you can add or remove some targets by simple edditing.
